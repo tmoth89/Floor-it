@@ -5,6 +5,7 @@ import  * as authActions from './actions/authActions.js';
 import Canvas from './components/canvas';
 // import Coloredshape from './components/coloredshape';
 import Drag from './components/Drag';
+import SignIn from './components/SignIn';
 
 
 //map state to props
@@ -33,8 +34,11 @@ class App extends Component {
     
     return(
       <Fragment>
+        <SignIn/>
         <h1 style={headerStyle}> Floor-it! </h1>
+        
       <Canvas />
+     
         
       
   
@@ -44,7 +48,6 @@ class App extends Component {
         this.props.updateFirstVarVal(e);
       }}>TYPE HERE</input> */}
       {/* <p>{this.props.firstVarVal}</p> */}
-
 
       </Fragment>
       
